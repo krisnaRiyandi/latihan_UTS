@@ -13,18 +13,19 @@ const diskonSchema = new mongoose.Schema({
   
     },
     
-    tanggal_update: {
+    tanggal_mulai: {
+        type: Date,
+    },
+    tanggal_selesai: {
         type: Date,
     },
     keterangan: {
         type: String,
-    },
-    lokasi:{
-        type: String,
     }
+    
 });
 
 //create Model from Schema
 
-const Stok = mongoose.model("Stok", stokSchema);
-module.exports = Stok;
+const Diskon = mongoose.model("Diskon", diskonSchema);
+module.exports = Diskon;
