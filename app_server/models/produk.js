@@ -5,7 +5,7 @@ const produkSchema = new mongoose.Schema({
     nama : {
         type : String,
     },
-    deksripsi : {
+    deskripsi : {
         type: String,
 
     },
@@ -15,11 +15,6 @@ const produkSchema = new mongoose.Schema({
     },
     stok: {
         type: Number,
-    },
-    kategori_id: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref : 'Kategori',
-        required: true,
     }
 });
 
